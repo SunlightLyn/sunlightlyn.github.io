@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Sunlight's Space Blog</title>
+        <link>https://sunlightlyn.github.io/blog</link>
+        <description>Sunlight's Space Blog</description>
+        <lastBuildDate>Wed, 27 Apr 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh</language>
+        <item>
+            <title><![CDATA[初次见面]]></title>
+            <link>https://sunlightlyn.github.io/blog/welcome</link>
+            <guid>welcome</guid>
+            <pubDate>Wed, 27 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[这是建立站点后的第一篇博文，这个站点由 Docusaurus 搭建，今后将作为我发布文档、博客和各种东西的站点。]]></description>
+            <content:encoded><![CDATA[<p>这是建立站点后的第一篇博文，这个站点由 <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a> 搭建，今后将作为我发布文档、博客和各种东西的站点。</p><p>如果你喜欢这个站点，可以看一看它的源码。</p><p>Dinosaurs are cool!</p><p><img loading="lazy" alt="Docusaurus Plushie" src="/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_E7b_"></p>]]></content:encoded>
+            <category>hello</category>
+            <category>docusaurus</category>
+        </item>
+    </channel>
+</rss>
