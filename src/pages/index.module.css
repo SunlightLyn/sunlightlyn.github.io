@@ -3,16 +3,87 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+ .hero {
+  /* height: calc(60vh - 60px); */
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 8fr 11fr;
+  align-items: center;
   position: relative;
+  /* background: url("/img/hero_main.svg") no-repeat right; */
+  /* background-size: 60vw; */
+  letter-spacing: 0.04em;
+  padding: 2em 4em;
+}
+
+.hero_intro {
+  padding: 1em;
+  /* padding-left: 4em; */
+  position: relative;
+  z-index: 10;
+}
+
+.hero_intro p {
+  margin: 26px 0px 24px 0;
+  /* color: hsl(215, 19%, 48%); */
+  /* text-shadow: 0 0 #8c99ab; */
+  font-size: 1.125rem;
+  /* text-align: justify; */
+  letter-spacing: normal;
+  line-height: 32px;
+}
+
+.hero_title {
+  font-size: calc((100vw/150) + 36px);
+  text-align: left;
+}
+
+.hero_svg {
   overflow: hidden;
+  width: 100%;
+  z-index: 5;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero_svg svg {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content minmax(0, max-content);
+    align-items: start;
+    height: auto;
+    /* background-position: center bottom;
+    background-size: 70vh; */
+    padding: 0;
+  }
+
+  .hero_intro {
+    padding: 0em var(--ifm-spacing-horizontal);
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero_svg {
+    width: 100%;
+    justify-self: center;
+    padding-top: 2em;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .hero_svg svg {
+    width: 90%;
+    height: auto;
   }
 }
 

@@ -6,22 +6,35 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
+import HeroMain from '/img/undraw_docusaurus_mountain.svg'
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+    <header className={styles.hero}>
+      <div className={styles.hero_intro}>
+        <h1 className={styles.hero_title}>
+          <span style={{color:'var(--ifm-color-primary)'}}>SunlightLyn</span>'s Blog</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            📕 阅读文档
-          </Link>
-        </div>
+        {/* <p className="hero__subtitle"> 在这里写一些内容。 </p> */}
+        {/* <MainButtons /> */}
+      </div>
+      <div className={styles.hero_svg}>
+        <HeroMain />
       </div>
     </header>
+  );
+}
+
+function MainButtons() {
+  return (
+    <div className={styles.buttons}>
+      <Link
+        className="button button--secondary button--lg"
+        to="/docs/intro">
+        📕 阅读文档
+      </Link>
+    </div>  
   );
 }
 
@@ -29,7 +42,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      // title={`Hello from ${siteConfig.title}`}
       description="SunlightLyn's personal website.">
       <HomepageHeader />
       <main>

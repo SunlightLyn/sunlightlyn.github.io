@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'SunlightLyn',
-  projectName: 'website',
+  projectName: 'sunlightlyn.github.io',
 
   presets: [
     [
