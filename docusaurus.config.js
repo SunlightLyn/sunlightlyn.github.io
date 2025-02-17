@@ -1,20 +1,25 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sunlight\'s Space',
   tagline: 'Welcome to my land.',
+  favicon: 'img/favicon.ico',
+
   url: 'https://sunlightlyn.github.io/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+
   organizationName: 'SunlightLyn',
   projectName: 'sunlightlyn.github.io',
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   presets: [
     [
@@ -22,15 +27,22 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: './sidebars.js',
           // editUrl: 'https://github.com/SunlightLyn/sunlightlyn.github.io/',
         },
         blog: {
           showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
           // editUrl: 'https://github.com/SunlightLyn/sunlightlyn.github.io/',
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       }),
     ],
@@ -110,8 +122,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} SunlightLyn. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
     
@@ -121,4 +133,4 @@ const config = {
   },
 };
 
-module.exports = config;
+export default config;
