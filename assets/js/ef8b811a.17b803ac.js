@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[947],{6600:t=>{t.exports=JSON.parse('{"authors":[{"name":"SunlightLyn","title":"ME Engineer | ACG Fan | Rythm Gamer","url":"https://github.com/SunlightLyn","imageURL":"https://avatars.githubusercontent.com/u/32167451?s=120&v=4","key":"sunlight","page":null,"count":1}]}')}}]);
