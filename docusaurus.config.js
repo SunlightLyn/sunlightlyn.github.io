@@ -12,6 +12,11 @@ const config = {
   tagline: 'Welcome to my land.',
   favicon: 'img/favicon.ico',
 
+  future: {
+    // @ts-ignore
+    v4: true,
+  },
+
   url: 'https://sunlightlyn.github.io/',
   baseUrl: '/',
 
