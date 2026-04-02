@@ -28,7 +28,9 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
-    "@docusaurus/types": "3.9.2"
+    "@docusaurus/types": "3.9.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
   },
   "browserslist": {
     "production": [
@@ -44,5 +46,6 @@
   },
   "engines": {
     "node": ">=20.0"
-  }
+  },
+  "packageManager": "yarn@4.13.0"
 }

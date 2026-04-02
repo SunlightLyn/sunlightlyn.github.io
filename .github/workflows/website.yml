@@ -21,14 +21,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - name: Enable Corepack
+        run: corepack enable
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: yarn
 
       # Runs a single command using the runners shell
       - name: Build website
-        run: yarn install && yarn build
+        run: yarn install --immutable && yarn build
 
       - name: Deploy pages
         uses: JamesIves/github-pages-deploy-action@v4
